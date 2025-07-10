@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sandeep Jampani | Portfolio</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Sandeep Jampani</h1>
+      <h3>And I'm a <span style="color:#0ef;">Frontend Developer</span></h3>
+      <p>
+        I'm a front-end web developer
+        <br>Expert in creating and designing modern, responsive websites.
+      </p>
+      <div class="home-sci">
+            <a href="https://www.linkedin.com/in/Sandeep Jampani" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Sandeep-1305" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://wa.me/+919618449799" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://www.instagram.com/hey_sandeep_on_insta" target="_blank"><i class='bx bxl-instagram'></i></a>   
+      </div>
+      <a href="#about" class="btn-box">More About Me</a>
+    </div>
+
+    <div class="home-img">
+      <img src="image.jpg" alt="Profile Photo" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate frontend developer skilled in HTML, CSS, JavaScript, React, and responsive design.
+      I love building clean, user-friendly interfaces that provide great user experiences.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <p>Python , Machine Learning , CSS , JavaScript , React , Git , Responsive Design , MySQL</p>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Portfolio</h3>
+        <p>My personal portfolio built with HTML, CSS, JS and responsive design</p>
+        <button class="view-project-btn" data-url=" https://sandeep-1305.github.io/Portfolio/">View Project</button>
+      </div>
+      <div class="project-card">
+        <h3>Credit Card Fraud Detection <i>[Machine Learning]</i></h3>
+        <p><b>Tech Stack</b>: Python, Streamlit, LightGBM, Pandas, Geopy, Joblib</p>
+        <p>Developed an interactive web application using Streamlit to detect fraudulent credit card transactions based on user-entered transaction details</p>
+        <button class="view-project-btn" data-url="https://fraud-detection0.streamlit.app/">View Project</button>
+      </div>
+        <div class="project-card">
+        <h3>E-Commerce <i>[Frontend]</i></h3>
+         <p><b>Tech Stack</b>: React.js,CSS,Html,JavaScript</p>
+        <p>Developed a responsive and user-friendly E-Commerce platform using React.js, featuring product listings, categories, and interactive UI components.</p>
+        <button class="view-project-btn" data-url="https://sandeep-1305.github.io/Ecommerce-react/">View Project</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: sandeepjampani123@gmail.com</p>
+    <p>Phone: +91-9618449799</p>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    document.querySelectorAll('.view-project-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const url = button.getAttribute('data-url');
+        if (url) {
+          window.open(url, '_blank');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
